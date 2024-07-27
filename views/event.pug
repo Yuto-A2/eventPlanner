@@ -1,0 +1,7 @@
+extends layout
+
+block layout-content
+  h2 Event 
+  ul 
+   each event in events 
+    li #{event.name}

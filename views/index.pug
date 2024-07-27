@@ -1,0 +1,13 @@
+extends layout
+
+block layout-content
+    h2 Why You Like Event Planner?
+    p When you find an event you can attend on the day, you may check the weather and decide whether you prefer an indoor or outdoor activity. 
+    p The event planner helps you find today's weather and events.
+    p You can respond to sudden ideas.
+
+    p Let's search for today's weather on your site.
+    form(action="/cityWeather" method="get")
+      label(for="cityName") Enter city:
+      input(type="text" id="cityName" name="cityName")
+      button(type="submit") Get Weather
