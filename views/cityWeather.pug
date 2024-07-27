@@ -1,8 +1,8 @@
 extends layout
 
 block layout-content
-  h1= title
-  ul
+  h2= title
+  ul#weatherList
     li
       h2 City: #{weather.name}
       p Weather: #{weather.weather[0].description}
@@ -10,7 +10,9 @@ block layout-content
       p Feels Like: #{(weather.main.feels_like - 273.15).toFixed(1)}°C
 
   h2 #{eventsTitle}
-  ul
+  p How's the weather in your area?
+  p Let's find the event you can do now.
+  ul#eventList
     each category in events
       li
         p 
