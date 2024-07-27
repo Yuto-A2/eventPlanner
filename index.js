@@ -1,6 +1,3 @@
-//Google maps API key AIzaSyC0G2-8xd7aOz0KEqQgcY-D6xJ3K5wjKuA
-//Weather API key ad56f8149383696e72c819221a36f971
-//mongodb+srv://testdbuser:JFK7kl4qFxicGilK@yutoa.hgy4o0a.mongodb.net/
 const express = require("express");
 const path = require("path"); 
 const dotenv = require("dotenv");
